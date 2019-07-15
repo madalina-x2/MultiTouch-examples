@@ -14,6 +14,7 @@
 		C5F7651122D4FC66004B95B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5F7650F22D4FC66004B95B2 /* LaunchScreen.storyboard */; };
 		C5F7651B22D4FCE9004B95B2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7651A22D4FCE9004B95B2 /* Card.swift */; };
 		C5F7651D22D5F8C1004B95B2 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7651C22D5F8C1004B95B2 /* Deck.swift */; };
+		C5F7652122D601E0004B95B2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7652022D601E0004B95B2 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C5F7651222D4FC66004B95B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5F7651A22D4FCE9004B95B2 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		C5F7651C22D5F8C1004B95B2 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		C5F7652022D601E0004B95B2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		C5F7650522D4FC65004B95B2 /* Set-Game */ = {
 			isa = PBXGroup;
 			children = (
+				C5F7652022D601E0004B95B2 /* CardView.swift */,
 				C5F7651A22D4FCE9004B95B2 /* Card.swift */,
 				C5F7651C22D5F8C1004B95B2 /* Deck.swift */,
 				C5F7651922D4FC93004B95B2 /* Supporting Files */,
@@ -153,6 +156,7 @@
 				C5F7650922D4FC65004B95B2 /* ViewController.swift in Sources */,
 				C5F7651B22D4FCE9004B95B2 /* Card.swift in Sources */,
 				C5F7650722D4FC65004B95B2 /* AppDelegate.swift in Sources */,
+				C5F7652122D601E0004B95B2 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

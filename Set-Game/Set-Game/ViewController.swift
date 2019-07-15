@@ -16,5 +16,32 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
     }
+    
+    @IBOutlet weak var CardView: CardView! {
+        didSet {
+            let swipe = UISwipeGestureRecognizer(target: self, action: #selector(nextCard))
+            swipe.direction = [.left, .right]
+            CardView.addGestureRecognizer(swipe)
+            
+            let pinch = UIPinchGestureRecognizer(target: CardView, action: #selector(CardView.adjustFaceCardScale(byHandlingGestureRecognizedBy: )))
+            CardView.addGestureRecognizer(pinch)
+        }
+    }
+    
+    @objc func nextCard() {
+        if let card = deck.draw() {
+            CardView.rank = card.rank.order
+            CardView.suit = card.suit.rawValue
+        }
+    }
+    
+    @IBAction func flipCard(_ sender: UITapGestureRecognizer) {
+        switch sender.state {
+        case .ended:
+            CardView.isFaceUp = !CardView.isFaceUp
+        default: break
+        }
+    }
+    
 }
 
